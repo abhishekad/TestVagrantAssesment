@@ -96,6 +96,7 @@ public class Base {
         }
         else if (website.equalsIgnoreCase("wiki")) {
             driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
             driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
             driver.get(prop.getProperty("wikiurl"));
         }
@@ -135,5 +136,8 @@ public class Base {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+    public static void tearDown(){
+        driver.quit();
     }
 }

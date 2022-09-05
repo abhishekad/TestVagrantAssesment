@@ -40,6 +40,10 @@ public class MovieDetails extends Base {
         catch(Exception e){
             reportFail(e.getMessage());
         }
+        finally {
+            Base.tearDown();
+            logger.log(Status.INFO,"Test complete");
+        }
 
     }
     @Test
@@ -52,7 +56,7 @@ public class MovieDetails extends Base {
         IMDB_HomePage.clickAjaxSuggestion();
         String imdbCountryOfOrigin = MovieSearchPage.getIMDBCountryOfOrigin();
         setupDriver("wiki");
-        Assert.assertEquals(IMDBTITLE,driver.getTitle(),"IMDB TITLE DOESN'T MATCH");
+        Assert.assertEquals(WIKITITLE,driver.getTitle(),"WIKI TITLE DOESN'T MATCH");
         WIKI_HomePage.enterTextToWikiSearchBar("Pushpa: The Rise - Part 1");
         WIKI_HomePage.clickWikiSearchIcon();
         String wikiCountry = WikiMovieSearchPage.getWikiCountry();
@@ -63,11 +67,10 @@ public class MovieDetails extends Base {
         catch(Exception e){
             reportFail(e.getMessage());
             }
-        report.flush();
+        finally {
+            Base.tearDown();
+        logger.log(Status.INFO,"Test complete");
     }
 
-    @AfterClass
-    public static void tearDown(){
-        driver.quit();
     }
 }

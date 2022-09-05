@@ -21,7 +21,7 @@ public class ExtentReportManager {
              * distinguish the reports generated while testing the program multiple times.
              ********************************************************************************/
 
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\HTML_Reports\\" + reportName);
+            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter( "\\HTML_Reports\\" + reportName);
             report = new ExtentReports();
             report.attachReporter(htmlReporter);
 

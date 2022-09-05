@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74f418e0-7c7a-4af4-a183-5cb32f89510a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imdb/pages/IMDB_HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imdb/pages/MovieSearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wikipedia/WIKI_HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wikipedia/WikiMovieSearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/MovieDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentReportManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ObjectRepository/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ObjectRepository/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MovieDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MovieDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
