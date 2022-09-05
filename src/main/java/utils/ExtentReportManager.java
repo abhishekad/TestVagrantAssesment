@@ -21,7 +21,7 @@ public class ExtentReportManager {
              * distinguish the reports generated while testing the program multiple times.
              ********************************************************************************/
 
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\HTML_Reports\\" + reportName);
+            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter( "\\HTML_Reports\\" + reportName);
             report = new ExtentReports();
             report.attachReporter(htmlReporter);
 
@@ -32,8 +32,8 @@ public class ExtentReportManager {
             report.setSystemInfo("Browser", "chrome");
 
             //Stating some of the project info in the report
-            htmlReporter.config().setDocumentTitle("ZigWheels Automation Results");
-            htmlReporter.config().setReportName("All Headlines of ZigWheels Automation");
+            htmlReporter.config().setDocumentTitle("Movie Details");
+            htmlReporter.config().setReportName("Comparison Between IMDB and WIKI");
             htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
             htmlReporter.config().setTimeStampFormat("MMM dd, yyyy HH:mm:ss");
 
